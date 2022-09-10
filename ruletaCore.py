@@ -111,7 +111,11 @@ class UI:
         
         lines = self.f.readlines()
         for line in lines:
-            self.participants.append(line[0:-2])            
+            if line[0] == '#':
+                print(line)
+                continue
+            
+            self.participants.append(line[0:-1])            
                                                        
         if not self.f.closed:
             self.f.close() 
