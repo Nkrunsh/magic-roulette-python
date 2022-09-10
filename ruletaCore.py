@@ -9,7 +9,7 @@ class UI:
 
         #---- WINDOW OBJECT -----
         self.window = Tk()
-        self.window.title("Ruleta Mágica ABG") 
+        self.window.title("Ruleta Mágica") 
         self.window.resizable(width=False, height=False)
         self.menubar = Menu(self.window)
         self.window.config(menu=self.menubar)
